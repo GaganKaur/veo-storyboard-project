@@ -6,9 +6,9 @@ import time
 import tempfile
 
 # --- Configuration ---
-GCP_PROJECT_ID = "veo-storyboard"
-GCS_BUCKET_NAME = "storyboard_video_veo" 
-GEMINI_API_KEY = "AIzaSyBlitCOfzmAqoj1uPxTuIbWc0hSEc2wsnY"
+GCP_PROJECT_ID = "<GCP_PROJECT_ID>"
+GCS_BUCKET_NAME = "<GCS_BUCKET_NAME>" 
+GEMINI_API_KEY = "<GEMINI_API_KEY>"
 
 # --- Initialization ---
 genai.configure(api_key=GEMINI_API_KEY)
