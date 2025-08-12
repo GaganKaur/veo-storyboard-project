@@ -73,23 +73,27 @@ pip install -r requirements.txt
 3. **Configure Your Environment**
 Both prompts_gen.py and automate-vid-gen.py require you to set your specific GCP and API details. Open each file and update the configuration variables at the top:
 File(s): prompts_gen.py and automate-vid-gen.py
-# --- Configuration ---
-GCP_PROJECT_ID = "your-gcp-project-id"        # <-- Replace with your GCP Project ID
-GCS_BUCKET_NAME = "your-gcs-bucket-name"    # <-- Replace with your GCS Bucket Name
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"      # <-- Replace with your actual API Key
+    **Configuration**
+    ```bash
+    GCP_PROJECT_ID = "your-gcp-project-id"        # <-- Replace with your GCP Project ID
+    GCS_BUCKET_NAME = "your-gcs-bucket-name"    # <-- Replace with your GCS Bucket Name
+    GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"      # <-- Replace with your actual API Key
+    ```
 
 4. **Prepare Your Source Video**
 Upload the source video you want to analyze to the root of your GCS bucket.
 
-## Running the Pipeline
+### Running the Pipeline
 The process is broken into two main stages.
 **Stage 1:** Generate the Prompts
 First, run the prompts_gen.py script to analyze your video and create the necessary text prompts.
 1. **Configure the script:** Open prompts_gen.py and update the SOURCE_VIDEO_FILENAME variable at the bottom to match the name of the file you uploaded to GCS.
-# In prompts_gen.py, at the bottom
-if __name__ == "__main__":
-    SOURCE_VIDEO_FILENAME = "your_source_video.mp4" # <-- Replace
-    run_prompt_generation_pipeline(SOURCE_VIDEO_FILENAME)
+In prompts_gen.py, at the bottom
+```bash
+    if __name__ == "__main__":
+        SOURCE_VIDEO_FILENAME = "your_source_video.mp4" # <-- Replace
+        run_prompt_generation_pipeline(SOURCE_VIDEO_FILENAME)
+```
 
 2. **Execute the script:**
 ```bash
