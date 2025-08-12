@@ -228,7 +228,7 @@ if __name__ == "__main__":
     # --- TO RUN: Configure and Execute ---
     
     # 2. Set the exact filename of the video
-    SOURCE_VIDEO_FILENAME = "Hotel_Transylvania_Love_At_First_Bite_Deleted_Scene.mp4" 
+    SOURCE_VIDEO_FILENAME = "your_input_video.mp4" 
     
     # 3. Run the script 
     run_prompt_generation_pipeline(SOURCE_VIDEO_FILENAME)
