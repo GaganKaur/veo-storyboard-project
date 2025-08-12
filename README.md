@@ -22,7 +22,7 @@ This script iterates through the generated prompts. For each prompt, it calls a 
 *   **Organized Output:** Saves each prompt as a separate, numbered .txt file in a dedicated GCS bucket folder, ready for the next stage of the production pipeline.
 
 ## Project Structure
-
+```bash
 STORYBOARD-PROJECT/
 ├── .gitignore # Specifies files and folders for Git to ignore.
 ├── prompts_gen.py # STAGE 1: Analyzes video and generates prompt files.
@@ -31,6 +31,7 @@ STORYBOARD-PROJECT/
 ├── prompts&actions.json # Example input file for prompts and actions.
 ├── requirements.txt # Lists all Python dependencies for the project.
 └── README.md # This documentation file.
+```
 
 ## Getting Started
 
