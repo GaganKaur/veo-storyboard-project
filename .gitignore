@@ -1,0 +1,13 @@
+# Folders to ignore
+__pycache__/
+temp_files/
+video_generation_workspace/
+
+# Specific files to ignore
+final_animated_short.mp4
+final_movie.mp4
+last_frame.png
+prompts&actions.json
+
+# Environment and secrets files (NEVER commit these)
+.env.yaml
